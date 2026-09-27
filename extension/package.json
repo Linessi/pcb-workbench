@@ -1,0 +1,50 @@
+{
+	"name": "ai-eda-copilot-extension",
+	"type": "module",
+	"version": "0.9.7",
+	"description": "PCB 工作台：对象便签、进展记录与交接包",
+	"author": "PCB Workbench contributors",
+	"license": "Apache-2.0",
+	"homepage": "https://github.com/Linessi/pcb-workbench",
+	"engines": {
+		"node": ">=20.17.0"
+	},
+	"scripts": {
+		"compile": "rimraf ./dist/ && ts-node ./config/esbuild.prod.ts",
+		"lint": "eslint",
+		"fix": "eslint --fix",
+		"build": "npm run compile && ts-node ./build/packaged.ts",
+		"debug": "ts-node ./build/dev.ts",
+		"update:check": "ts-node ./build/update.ts check",
+		"update": "ts-node ./build/update.ts update && npm install",
+		"manifest:generate": "npm install && ts-node ./build/manifest.ts generate",
+		"manifest:bump": "npm install && ts-node ./build/manifest.ts bump && npm install",
+		"test": "node --test tests/review.test.cjs tests/drc-adapter.test.cjs tests/export.test.cjs && node tests/notes-selection.test.mjs && node tests/notes-editor.test.mjs"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "5.4.1",
+		"@jlceda/pro-api-types": "0.4.23",
+		"@types/fs-extra": "11.0.4",
+		"@types/ws": "8.18.1",
+		"esbuild": "0.25.0",
+		"eslint": "9.39.2",
+		"fs-extra": "11.3.2",
+		"ignore": "7.0.5",
+		"jszip": "3.10.1",
+		"lint-staged": "16.2.7",
+		"rimraf": "6.1.2",
+		"simple-git-hooks": "2.13.1",
+		"ts-node": "10.9.2",
+		"typescript": "5.9.3",
+		"ws": "8.21.1"
+	},
+	"overrides": {
+		"brace-expansion@>=2.0.0 <3": "2.1.7"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	}
+}

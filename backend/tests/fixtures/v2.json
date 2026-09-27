@@ -1,0 +1,127 @@
+{
+  "projectName": "合成接口测试夹具",
+  "board": {
+    "width": 4000,
+    "height": 3000,
+    "layers": [
+      "Top Layer",
+      "Bottom Layer"
+    ]
+  },
+  "components": [
+    {
+      "reference": "U1",
+      "value": "STM32 MCU",
+      "package": "LQFP-64"
+    },
+    {
+      "reference": "Y1",
+      "value": "8MHz Crystal",
+      "package": "SMD"
+    },
+    {
+      "reference": "R0",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R1",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R2",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R3",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R4",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R5",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R6",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R7",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R8",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R9",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R10",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R11",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R12",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R13",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R14",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R15",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R16",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R17",
+      "value": "10k",
+      "package": "0603"
+    }
+  ],
+  "nets": [
+    "GND",
+    "3V3",
+    "TEST_0",
+    "TEST_1",
+    "TEST_2",
+    "TEST_3",
+    "TEST_4",
+    "TEST_5"
+  ],
+  "statistics": {
+    "componentCount": 20,
+    "netCount": 8
+  }
+}

@@ -1,0 +1,17 @@
+**/.env
+**/.env.*
+!**/.env.example
+**/.deepseek.env
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.eslintcache
+**/*.tsbuildinfo
+**/coverage/
+**/*.log
+**/dist/
+output/
+artifacts/
+*.eext
+*.zip

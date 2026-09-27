@@ -1,0 +1,22 @@
+{
+  "projectName": "机器人控制板_合成测试样例",
+  "board": {
+    "width": 4000,
+    "height": 3000,
+    "layers": ["Top Layer", "Bottom Layer", "Board Outline Layer"]
+  },
+  "components": [
+    {"reference": "U1", "value": "STM32F4 MCU", "package": "LQFP-64"},
+    {"reference": "Y1", "value": "8MHz 晶振", "package": "SMD-3225"},
+    {"reference": "C1", "value": "22pF", "package": "0402"},
+    {"reference": "C2", "value": "22pF", "package": "0402"},
+    {"reference": "C3", "value": "100nF", "package": "0402"},
+    {"reference": "C4", "value": "47uF", "package": "1206"},
+    {"reference": "U2", "value": "DC-DC Buck", "package": "QFN-16"},
+    {"reference": "U3", "value": "CAN Transceiver", "package": "SOIC-8"},
+    {"reference": "U4", "value": "Motor Driver", "package": "QFN-24"},
+    {"reference": "J1", "value": "Motor Connector", "package": "Terminal-2P"}
+  ],
+  "nets": ["GND", "3V3", "12V_MOTOR", "OSC_IN", "OSC_OUT", "CAN_H", "CAN_L", "MOTOR_A", "MOTOR_B"],
+  "statistics": {"componentCount": 10, "netCount": 9}
+}

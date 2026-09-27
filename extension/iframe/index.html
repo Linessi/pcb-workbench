@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 设计审查</title><link rel="stylesheet" href="/iframe/panel.css"><script defer src="/dist/panel.js"></script></head>
+<body><main class="app">
+  <header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">审</span><strong>AI EDA 设计助手</strong></div></header>
+  <section class="hero compact"><h1>AI 设计审查</h1></section>
+  <section class="overview" aria-label="当前 PCB"><div class="project"><span class="label">当前工程</span><strong id="project-name">读取中…</strong><span id="board-size" class="subtle"></span></div><div class="metric"><span class="label">元件</span><strong id="component-count">—</strong></div><div class="metric"><span class="label">网络</span><strong id="net-count">—</strong></div><div class="metric"><span class="label">配置图层</span><strong id="layer-count">—</strong></div></section>
+  <p id="snapshot-meta" class="subtle"></p>
+  <details class="coverage"><summary>检查范围</summary><div id="coverage"></div></details>
+  <section class="actionbar"><div><strong id="status">读取中</strong><small id="status-detail"></small></div><div class="actions"><button id="analyze-button" disabled type="button">开始分析</button><button id="cancel-button" disabled type="button">取消</button><button id="recheck-button" disabled type="button">重新检查</button><button id="repeat-button" disabled type="button">重新分析</button><button id="export-button" type="button">导出报告</button></div></section>
+  <section id="report" class="report" hidden>
+    <div class="risk-tally"><span class="tally">DRC 总数 <b id="native-count">—</b></span><span class="tally">已保留明细 <b id="risk-count">—</b></span><span class="tally">问题分组 <b id="group-count">—</b></span><span class="tally">AI 已解释 <b id="explained-count">0</b></span><span class="tally">待核查 <b id="pending-count">0</b></span></div>
+    <details class="review-details"><summary>检查详情</summary><p id="summary" class="summary"></p><p id="drc-note" class="subtle"></p></details>
+    <section class="panel"><h2>检查问题</h2><details><summary>按网络查看</summary><div id="groups"></div></details><div class="pagination"><button id="previous-page" type="button">上一页</button><span id="page-label"></span><button id="next-page" type="button">下一页</button></div><div id="risks" class="list"></div></section>
+    <div class="report-grid"><section class="panel"><h2>分析与建议</h2><div id="explanations" class="list"></div></section><section class="panel"><h2>待核查项目</h2><div id="recommendations" class="list"></div></section></div>
+    <section class="panel"><h2>最近两次检查差异</h2><div id="comparison"></div></section>
+    <details id="references-panel" class="panel"><summary>规则依据</summary><div id="references" class="reference-list"></div></details>
+    <details class="panel"><summary>分析过程</summary><div id="analysis-process" class="process-list"></div></details>
+    <details class="panel"><summary>检查证据</summary><div id="evidence" class="evidence-list"></div></details>
+  </section>
+</main></body></html>

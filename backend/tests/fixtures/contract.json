@@ -1,0 +1,201 @@
+{
+  "projectName": "合成接口测试夹具",
+  "board": {
+    "width": 4000,
+    "height": 3000,
+    "layers": [
+      "Top Layer",
+      "Bottom Layer"
+    ]
+  },
+  "components": [
+    {
+      "reference": "U1",
+      "value": "STM32 MCU",
+      "package": "LQFP-64"
+    },
+    {
+      "reference": "Y1",
+      "value": "8MHz Crystal",
+      "package": "SMD"
+    },
+    {
+      "reference": "R0",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R1",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R2",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R3",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R4",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R5",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R6",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R7",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R8",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R9",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R10",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R11",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R12",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R13",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R14",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R15",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R16",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R17",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R18",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R19",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R20",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R21",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R22",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R23",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R24",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R25",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R26",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R27",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R28",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R29",
+      "value": "10k",
+      "package": "0603"
+    },
+    {
+      "reference": "R30",
+      "value": "10k",
+      "package": "0603"
+    }
+  ],
+  "nets": [
+    "GND",
+    "3V3",
+    "TEST_0",
+    "TEST_1",
+    "TEST_2",
+    "TEST_3",
+    "TEST_4",
+    "TEST_5",
+    "TEST_6",
+    "TEST_7",
+    "TEST_8",
+    "TEST_9",
+    "TEST_10",
+    "TEST_11",
+    "TEST_12",
+    "TEST_13",
+    "TEST_14"
+  ],
+  "statistics": {
+    "componentCount": 33,
+    "netCount": 17
+  }
+}

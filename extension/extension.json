@@ -1,0 +1,68 @@
+{
+	"name": "ai-eda-copilot",
+	"uuid": "614d6f012b51458ab00809eca0f34305",
+	"displayName": "PCB 工作台",
+	"description": "对象便签、进展记录与交接包；辅助 PCB 设计检查。",
+	"version": "0.9.7",
+	"publisher": "PCB Workbench contributors",
+	"engines": {
+		"eda": "^3.2.0"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Linessi/pcb-workbench"
+	},
+	"categories": "Other",
+	"keywords": [
+		"PCB",
+		"AI",
+		"Design Review"
+	],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"homepage": "https://github.com/Linessi/pcb-workbench",
+	"bugs": "https://github.com/Linessi/pcb-workbench/issues",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"home": [
+			{
+				"id": "aiEdaCopilotHomeMenu",
+				"title": "PCB 工作台",
+				"menuItems": [
+					{
+						"id": "aiEdaCopilotHelloHome",
+						"title": "插件诊断",
+						"registerFn": "helloWorld"
+					}
+				]
+			}
+		],
+		"pcb": [
+			{
+				"id": "aiEdaCopilotPcbMenu",
+				"title": "PCB 工作台",
+				"menuItems": [
+					{
+						"id": "pcbNotesMenu",
+						"title": "PCB 随手记",
+						"registerFn": "openNotes"
+					},
+					{
+						"id": "aiEdaCopilotDesignReview",
+						"title": "PCB 设计检查",
+						"registerFn": "openDesignReview"
+					},
+					{
+						"id": "aiEdaCopilotAnalyzePcb",
+						"title": "采集当前 PCB",
+						"registerFn": "analyzeCurrentPcb"
+					}
+				]
+			}
+		]
+	}
+}
